@@ -72,3 +72,10 @@ export type ResponseProps = {
   data?: any;
   msg?: string;
 };
+
+export interface ButtonProps extends TouchableOpacityProps {
+  loading?: boolean;
+  style?: ViewStyle;
+  onPress?: () => void;
+  children: React.ReactNode;
+}
